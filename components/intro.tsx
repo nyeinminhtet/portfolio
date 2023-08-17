@@ -33,7 +33,7 @@ const Intro = () => {
         </div>
 
         <div className=" max-w-[500px]">
-          <motion.p
+          <motion.h1
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             className=" text-md sm:text-2xl font-medium !leading-[1.5]"
@@ -44,7 +44,7 @@ const Intro = () => {
             <span>who's passionate about crafting web applications.</span>
             My focus is
             <span className="font-bold"> React & Nextjs.</span>
-          </motion.p>
+          </motion.h1>
         </div>
       </div>
 
