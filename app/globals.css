@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.profile {
+  border-radius: 53% 27% 37% 57% / 27% 65% 35% 55%;
+}
