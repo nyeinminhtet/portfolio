@@ -1,17 +1,20 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import profile from "@/public/profile.png";
 import { motion } from "framer-motion";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useSectionView } from "@/libs/hook";
 
 const Intro = () => {
+  const { ref } = useSectionView("Home", 0.5);
+
   return (
-    <section className="mb-28 sm:mb-0 justify-evenly">
+    <section ref={ref} className="mb-28 sm:mb-0 scroll-mt-[100rem]" id="home">
       <div className="flex flex-wrap justify-evenly mb-10">
         {/* image section */}
         <div className="relative">

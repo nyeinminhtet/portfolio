@@ -1,11 +1,16 @@
-import React, { useRef } from "react";
+"use client";
+
+import React from "react";
 import SectionHeader from "./sectionHeader";
 import { projectsData } from "@/libs/data";
 import Project from "./project";
+import { useSectionView } from "@/libs/hook";
 
 const Projects = () => {
+  const { ref } = useSectionView("Projects", 0.3);
+
   return (
-    <section>
+    <section ref={ref} id="projects" className=" scroll-mt-28">
       <SectionHeader>My Projects</SectionHeader>
 
       <div>
