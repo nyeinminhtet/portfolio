@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import sarrmal from "@/public/home.png";
+import sarrmal from "@/public/sarrmal.png";
 import breadit from "@/public/breadid.png";
 import shortvideo from "@/public/tiktok.png";
 
@@ -76,11 +76,12 @@ export const projectsData = [
       "PostgreSQL",
     ],
     imageUrl: sarrmal,
+    link: "https://www.nyeinminhtet.com/",
   },
   {
     title: "Breadit",
     description:
-      "Similar with Reddit, here you can create communite for post, vote and comment.",
+      "Create communite and then  creat a post for vote and comment to know who liked your thought.",
     tags: [
       "React",
       "TypeScript",
@@ -91,13 +92,15 @@ export const projectsData = [
       "MySQL",
     ],
     imageUrl: breadit,
+    link: "https://breadid.vercel.app/",
   },
   {
     title: "Short-video-platform",
     description:
-      "Short video platform is similar TikTok because I like watching TikTok so I did it.",
-    tags: ["React", "Next.js", "Tailwind", "Sanity"],
+      "Short video platform is similar with TikTok because I like watching TikTok so I did it.There you can post a video,like and comment.",
+    tags: ["React", "Next.js", "Typescript", "Tailwind", "Sanity"],
     imageUrl: shortvideo,
+    link: "https://short-video-platform.vercel.app/",
   },
 ] as const;
 
