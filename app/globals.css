@@ -5,3 +5,7 @@
 .profile {
   border-radius: 53% 27% 37% 57% / 27% 65% 35% 55%;
 }
+
+.Borderblack {
+  @apply border border-black/10;
+}

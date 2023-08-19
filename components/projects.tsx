@@ -10,7 +10,7 @@ const Projects = () => {
   const { ref } = useSectionView("Projects", 0.3);
 
   return (
-    <section ref={ref} id="projects" className=" scroll-mt-28">
+    <section ref={ref} id="projects" className=" scroll-mt-28 mb-28">
       <SectionHeader>My Projects</SectionHeader>
 
       <div>

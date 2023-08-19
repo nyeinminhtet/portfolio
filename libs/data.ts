@@ -5,6 +5,21 @@ import { LuGraduationCap } from "react-icons/lu";
 import sarrmal from "@/public/sarrmal.png";
 import breadit from "@/public/breadid.png";
 import shortvideo from "@/public/tiktok.png";
+import react from "@/assets/react.svg";
+import nextjs from "@/assets/nextjs-icon-svgrepo-com.svg";
+import typescript from "@/assets/typescript.svg";
+import redux from "@/assets/redux.svg";
+import tailwind from "@/assets/tailwaind-removebg-preview.png";
+import mui from "@/assets/mui-removebg-preview.png";
+import nextauth from "@/assets/nextauth.png";
+import nodejs from "@/assets/node-js.svg";
+import prisma from "@/assets/prisma.png";
+import mongodb from "@/assets/mongodb.svg";
+import psql from "@/assets/postgresql.svg";
+import mysql from "@/assets/mysql.svg";
+import git from "@/assets/github.svg";
+import express from "@/assets/express-removebg-preview.png";
+import framer from "@/assets/framer-removebg-preview.png";
 
 export const links = [
   {
@@ -74,19 +89,19 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "React",
-  "Next.js",
-  "TypeScript",
-  "Redux Toolkit",
-  "Tailwind",
-  "Material-UI",
-  "Framer Motion",
-  "NextAuth",
-  "Node.js",
-  "Express",
-  "Prisma",
-  "MongoDB",
-  "PostgreSQL",
-  "MySQL",
-  "Git",
+  react,
+  nextjs,
+  redux,
+  typescript,
+  tailwind,
+  mui,
+  framer,
+  nextauth,
+  nodejs,
+  express,
+  prisma,
+  mongodb,
+  psql,
+  mysql,
+  git,
 ] as const;
