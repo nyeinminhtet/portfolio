@@ -61,8 +61,8 @@ export default function Project({
             src={imageUrl}
             alt="project"
             quality={95}
-            className=" absolute hidden sm:block group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:scale-110 transition
-             top-8 sm:-right-10 md:right-0 w-[22.25rem] md:w-[25.25rem] rounded-t-lg shadow-2xl cursor-pointer group-odd:top-20 group-even:left-0"
+            className=" absolute hidden sm:block group-hover:-translate-x-3 group-hover:translate-y-3 group-last:mt-10 group-hover:scale-110 transition
+             top-8 sm:-right-10 md:right-0 w-[22.25rem] md:w-[25.25rem] md:group-last:w-[27rem] rounded-t-lg shadow-2xl cursor-pointer group-odd:top-20 group-even:left-0"
           />
         </Link>
       </section>

@@ -1,10 +1,7 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import sarrmal from "@/public/sarrmal.png";
 import breadit from "@/public/breadid.png";
 import shortvideo from "@/public/tiktok.png";
+import social from "@/public/social.png";
 import react from "@/assets/react.svg";
 import nextjs from "@/assets/nextjs-icon-svgrepo-com.svg";
 import typescript from "@/assets/typescript.svg";
@@ -85,6 +82,21 @@ export const projectsData = [
     tags: ["React", "Next.js", "Typescript", "Tailwind", "Sanity"],
     imageUrl: shortvideo,
     link: "https://short-video-platform.vercel.app/",
+  },
+  {
+    title: "Social-Platform",
+    description:
+      "A SocialMedia Platform, can create post, like and follow function. Light & Dark mods are include as LightTheme.",
+    tags: [
+      "React",
+      "Redux-Toolkit",
+      "Material-UI",
+      "express",
+      "mongoose",
+      "MongoDB",
+    ],
+    imageUrl: social,
+    link: "https://socialplatform.vercel.app/",
   },
 ] as const;
 
