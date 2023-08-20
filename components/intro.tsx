@@ -41,14 +41,20 @@ const Intro = () => {
           <motion.h1
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            className=" text-md sm:text-2xl font-medium !leading-[1.5]"
+            className=" text-md sm:text-2xl dark:text-gray-300 font-medium !leading-[1.5]"
           >
             Hello,
-            <span className="font-bold">I'm Nyein Min Htet,</span> a
-            <span className=" font-bold"> junior full-stack developer </span>
+            <span className="font-bold dark:text-white">
+              I'm Nyein Min Htet,
+            </span>{" "}
+            a
+            <span className=" font-bold dark:text-white">
+              {" "}
+              junior full-stack developer{" "}
+            </span>
             <span>who's passionate about crafting web applications.</span>
             My focus is
-            <span className="font-bold"> React & Nextjs.</span>
+            <span className="font-bold dark:text-white"> React & Nextjs.</span>
           </motion.h1>
         </div>
       </div>
@@ -80,22 +86,25 @@ const Intro = () => {
           Download CV{" "}
           <HiDownload className=" opacity-60 group-hover:translate-y-1 transition" />{" "}
         </a>
-        <a
-          href="https://www.linkedin.com/in/nyeinminhtet/"
-          target="_blank"
-          className="flex group items-center cursor-pointer hover:text-gray-950  bg-white text-gray-800 p-4 gap-2 rounded-full Borderblack
+
+        <div className="flex gap-2">
+          <a
+            href="https://www.linkedin.com/in/nyeinminhtet/"
+            target="_blank"
+            className="flex group items-center cursor-pointer hover:text-gray-950  bg-white text-gray-800 p-4 gap-2 rounded-full Borderblack
            outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-[1.15] transition dark:bg-white/60"
-        >
-          <BsLinkedin size={25} />
-        </a>
-        <a
-          href="https://github.com/nyeinminhtet"
-          target="_blank"
-          className="flex group items-center cursor-pointer hover:text-gray-950  bg-white text-gray-800 p-4 gap-2 rounded-full Borderblack
+          >
+            <BsLinkedin size={25} />
+          </a>
+          <a
+            href="https://github.com/nyeinminhtet"
+            target="_blank"
+            className="flex group items-center cursor-pointer hover:text-gray-950  bg-white text-gray-800 p-4 gap-2 rounded-full Borderblack
            outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-[1.5] transition dark:bg-white/60"
-        >
-          <FaGithubSquare size={27} />
-        </a>
+          >
+            <FaGithubSquare size={27} />
+          </a>
+        </div>
       </motion.div>
     </section>
   );

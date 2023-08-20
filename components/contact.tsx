@@ -24,13 +24,22 @@ const Contact = () => {
     >
       <SectionHeader>Contact me</SectionHeader>
       <p className=" text-gray-700 -mt-3 dark:text-gray-300">
-        Please contact me directly from{" "}
+        I'm excited about collaborating on innovative projects and contributing
+        my skills to a dynamic development team. Feel free to reach out to me at
         <a
           href="mailto:nyeinminhtet.dev@gmail.com"
-          className="underline font-bold"
+          className="underline font-bold hover:text-gray-100"
         >
           {" "}
           Email
+        </a>{" "}
+        or connect with me on{" "}
+        <a
+          href="https://www.linkedin.com/in/nyeinminhtet/"
+          target="_blank"
+          className="underline text-gray-300 hover:text-gray-100 font-bold"
+        >
+          LinkedIn
         </a>{" "}
         or through this form.
       </p>
