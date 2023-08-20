@@ -28,7 +28,7 @@ const Contact = () => {
         my skills to a dynamic development team. Feel free to reach out to me at
         <a
           href="mailto:nyeinminhtet.dev@gmail.com"
-          className="underline font-bold hover:text-gray-100"
+          className="underline font-bold dark:hover:text-gray-100"
         >
           {" "}
           Email
@@ -37,7 +37,7 @@ const Contact = () => {
         <a
           href="https://www.linkedin.com/in/nyeinminhtet/"
           target="_blank"
-          className="underline text-gray-300 hover:text-gray-100 font-bold"
+          className="underline  dark:hover:text-gray-100 font-bold"
         >
           LinkedIn
         </a>{" "}
