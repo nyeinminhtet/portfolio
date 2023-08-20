@@ -6,7 +6,7 @@ import { BsMoon, BsSun } from "react-icons/bs";
 type Theme = "light" | "dark";
 
 const ThemeSwitch = () => {
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setTheme] = useState<Theme>("light");
 
   const handleTheme = () => {
     if (theme === "light") {
