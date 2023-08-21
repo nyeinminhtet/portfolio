@@ -45,7 +45,7 @@ export const projectsData = [
   {
     title: "SarrMal",
     description:
-      "Customers no need to wait for orders, they can do it by scaning qr-code that provided restaurants. SarrMal(POS) provied for restaurants that include manage menus, qr-code for order, customers side and restaurant side for Manager. ",
+      "Customers no need to wait for orders, they can do it by scan qr-code that provided restaurants. SarrMal(POS) provide for restaurants that include manage menus, qr-code for order, customers side and restaurant side for Manager. ",
     tags: [
       "React",
       "Next.js",
@@ -62,7 +62,7 @@ export const projectsData = [
   {
     title: "Breadit",
     description:
-      "Create communite and then  creat a post for vote and comment to know who liked your thought.",
+      "Create communite and create a post for vote and comment to know who liked your thought.",
     tags: [
       "React",
       "TypeScript",
