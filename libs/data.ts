@@ -57,7 +57,7 @@ export const projectsData = [
       "PostgreSQL",
     ],
     imageUrl: sarrmal,
-    link: "https://www.nyeinminhtet.com/",
+    link: "https://sarrmal.vercel.app/",
   },
   {
     title: "Breadit",
