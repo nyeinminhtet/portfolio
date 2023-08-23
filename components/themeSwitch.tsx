@@ -39,7 +39,7 @@ const ThemeSwitch = () => {
      shadow-2xl rounded-full hover:scale-110 active:scale-105 dark:bg-gray-950"
       onClick={handleTheme}
     >
-      {theme === "light" ? <BsSun size={25} /> : <BsMoon size={25} />}
+      {theme === "light" ? <BsSun size={20} /> : <BsMoon size={20} />}
     </button>
   );
 };
