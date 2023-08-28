@@ -81,7 +81,6 @@ const Intro = () => {
           className="flex items-center cursor-pointer group bg-white text-gray-900 px-7 py-3 gap-2 rounded-full 
           Borderblack outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-gray-200"
           href="/Cv.pdf"
-          download
         >
           Download CV{" "}
           <HiDownload className=" opacity-60 group-hover:translate-y-1 transition" />{" "}
