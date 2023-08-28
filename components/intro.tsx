@@ -6,7 +6,6 @@ import profile from "@/public/profile.png";
 import { motion } from "framer-motion";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
-import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionView } from "@/libs/hook";
 import { useActiveSectionContext } from "@/context/activeSectionContext";
