@@ -33,14 +33,6 @@ const Contact = () => {
           {" "}
           Email
         </a>{" "}
-        or connect with me on{" "}
-        <a
-          href="https://www.linkedin.com/in/nyeinminhtet/"
-          target="_blank"
-          className="underline  dark:hover:text-gray-100 font-bold"
-        >
-          LinkedIn
-        </a>{" "}
         or through this form.
       </p>
 
