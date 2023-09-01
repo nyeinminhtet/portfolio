@@ -15,7 +15,11 @@ const Intro = () => {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
-    <section ref={ref} className="mb-28 sm:mb-0 scroll-mt-[100rem]" id="home">
+    <section
+      ref={ref}
+      className="mb-28 sm:mb-0 scroll-mt-[100rem] w-[70%]"
+      id="home"
+    >
       <div className="flex flex-wrap justify-evenly mb-10">
         {/* image section */}
         <div className="relative">
@@ -31,7 +35,7 @@ const Intro = () => {
               height="242"
               quality="95"
               priority={true}
-              className="profile border-gray-100 object-cover shadow-xl border "
+              className="object-cover profile border-2 border-s-white border-e-white "
             />
           </motion.div>
         </div>

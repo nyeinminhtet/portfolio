@@ -5,15 +5,17 @@ import { useScroll, motion, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Github } from "lucide-react";
 
 type ProjectProps = (typeof projectsData)[number];
 
 export default function Project({
   title,
+  demo,
+  github,
   description,
   tags,
   imageUrl,
-  link,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -38,9 +40,27 @@ export default function Project({
        relative sm:h-[23rem] dark:bg-gray-800 dark:hover:bg-gray-700"
       >
         <div className=" px-5 pt-4 pb-7 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[26rem]">
-          <h3 className=" text-2xl font-semibold dark:text-gray-200">
-            {title}
-          </h3>
+          <div className="flex gap-7 items-center">
+            <h3 className=" text-2xl font-semibold dark:text-gray-200">
+              {title}
+            </h3>
+            <div className="flex gap-4">
+              <Link
+                href={demo}
+                target="_blank"
+                className=" underline text-md font-bold hover:text-indigo-500"
+              >
+                demo
+              </Link>
+              <Link
+                href={github}
+                target="_blank"
+                className=" bg-zinc-50 rounded-lg hover:bg-zinc-400 "
+              >
+                <Github className=" bg-zinc-300 dark:text-black  rounded-md hover:bg-zinc-400 dark:hover:bg-zinc-50" />
+              </Link>
+            </div>
+          </div>
           <p className=" mt-2 leading-relaxed text-gray-700 sm:group-first:text-[0.8rem] md:group-first:text-[1rem] dark:text-gray-50">
             {description}
           </p>
@@ -56,15 +76,13 @@ export default function Project({
           </ul>
         </div>
 
-        <Link href={link} target="_blank">
-          <Image
-            src={imageUrl}
-            alt="project"
-            quality={95}
-            className=" absolute hidden sm:block group-hover:-translate-x-3 group-hover:translate-y-3 group-last:mt-10 group-hover:scale-110 transition
+        <Image
+          src={imageUrl}
+          alt="project"
+          quality={95}
+          className=" absolute hidden sm:block group-hover:-translate-x-3 group-hover:translate-y-3 group-last:mt-10 group-hover:scale-110 transition
              top-8 sm:-right-10 md:right-0 w-[22.25rem] md:w-[25.25rem] md:group-last:w-[27rem] rounded-t-lg shadow-2xl cursor-pointer group-odd:top-20 group-even:left-0"
-          />
-        </Link>
+        />
       </section>
     </motion.div>
   );

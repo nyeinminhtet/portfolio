@@ -43,7 +43,9 @@ export const links = [
 
 export const projectsData = [
   {
-    title: "SarrMal",
+    title: "SarrMal(POS)",
+    demo: "https://sarrmal.vercel.app/",
+    github: "https://github.com/nyeinminhtet/happy-pos-nextjs",
     description:
       "Customers no need to wait for orders, they can do it by scan qr-code that provided restaurants. SarrMal(POS) provide for restaurants that include manage menus, qr-code for order, customers side and restaurant side for Manager. ",
     tags: [
@@ -57,10 +59,11 @@ export const projectsData = [
       "PostgreSQL",
     ],
     imageUrl: sarrmal,
-    link: "https://sarrmal.vercel.app/",
   },
   {
     title: "Breadit",
+    demo: "https://breadid.vercel.app/",
+    github: "https://github.com/nyeinminhtet/reddit-clone",
     description:
       "Create communite and create a post for vote and comment to know who liked your thought.",
     tags: [
@@ -73,18 +76,20 @@ export const projectsData = [
       "MySQL",
     ],
     imageUrl: breadit,
-    link: "https://breadid.vercel.app/",
   },
   {
     title: "Short-video-platform",
+    demo: "https://short-video-platform.vercel.app/",
+    github: "https://github.com/nyeinminhtet/short-video-platform",
     description:
       "Short video platform is similar with TikTok because I like watching TikTok so I did it.There you can post a video,like and comment.",
     tags: ["React", "Next.js", "Typescript", "Tailwind", "Sanity"],
     imageUrl: shortvideo,
-    link: "https://short-video-platform.vercel.app/",
   },
   {
     title: "Social-Platform",
+    demo: "https://socialplatform.vercel.app/",
+    github: "https://github.com/nyeinminhtet/Mern-social",
     description:
       "A SocialMedia Platform, can create post, like and follow function. Light & Dark mods are include as LightTheme.",
     tags: [
@@ -96,7 +101,6 @@ export const projectsData = [
       "MongoDB",
     ],
     imageUrl: social,
-    link: "https://socialplatform.vercel.app/",
   },
 ] as const;
 
