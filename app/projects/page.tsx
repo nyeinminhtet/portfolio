@@ -9,7 +9,7 @@ import { ChevronLeftCircle } from "lucide-react";
 import { useRouter } from "next/navigation";
 import SectionHeader from "@/components/sectionHeader";
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
   return (
     <div className=" flex flex-col mx-10 -mt-20">
@@ -85,4 +85,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
