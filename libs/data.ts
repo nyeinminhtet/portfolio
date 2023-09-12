@@ -2,6 +2,11 @@ import sarrmal from "@/public/sarrmal.png";
 import breadit from "@/public/breadid.png";
 import shortvideo from "@/public/tiktok.png";
 import social from "@/public/social.png";
+import gossipy from "@/public/gossipy.png";
+import bookbuddy from "@/public/bookbuddy.png";
+import phaykyi from "@/public/phaykyi.png";
+import summarizer from "@/public/summarizer.png";
+
 import react from "@/assets/react.svg";
 import nextjs from "@/assets/nextjs-icon-svgrepo-com.svg";
 import typescript from "@/assets/typescript.svg";
@@ -78,7 +83,7 @@ export const projectsData = [
     imageUrl: breadit,
   },
   {
-    title: "Short-video-platform",
+    title: "Short-Video-Platform",
     demo: "https://short-video-platform.vercel.app/",
     github: "https://github.com/nyeinminhtet/short-video-platform",
     description:
@@ -101,6 +106,67 @@ export const projectsData = [
       "MongoDB",
     ],
     imageUrl: social,
+  },
+  {
+    title: "Phay Kyi",
+    demo: "https://phay-kyi.vercel.app/dashboard",
+    github: "https://github.com/nyeinminhtet/phay-kyi",
+    description:
+      "A game that users created what they wanted, and answer the quiz. Then, they can check how many answers they did. They can also choose Hot topic.",
+    tags: [
+      "React",
+      "Next.js",
+      "Typescript",
+      "Tailwind-css",
+      "Shadcn/ui",
+      "NextAuth",
+      "Prisma",
+      "PostgreSQL",
+    ],
+    imageUrl: phaykyi,
+  },
+  {
+    title: "Gossipy",
+    demo: "https://gossipy-talk.vercel.app/",
+    github: "https://github.com/nyeinminhtet/gossipy",
+    description:
+      "A realtime chat message, user can add friend, accept and send message.",
+    tags: [
+      "React",
+      "Next.js",
+      "Tailwind-css",
+      "Shadcn/ui",
+      "Typescript",
+      "NextAuth",
+      "Redux-Toolkit",
+      "Redis",
+    ],
+    imageUrl: gossipy,
+  },
+  {
+    title: "BookBuddy",
+    demo: "https://bookbuddy-seven.vercel.app/",
+    github: "https://github.com/nyeinminhtet/bookbuddy",
+    description:
+      "AI support chat box, can ask for book what you want. But only can ask for book. ",
+    tags: [
+      "React",
+      "Next.js",
+      "Typescript",
+      "Tailwind-css",
+      "Shadcd/ui",
+      "Redis",
+    ],
+    imageUrl: bookbuddy,
+  },
+  {
+    title: "Summarizer",
+    demo: "https://summarizer-article.vercel.app/",
+    github: "https://github.com/nyeinminhtet/summarizer",
+    description:
+      "For articles to summarize with OpenAI. For only, to  summarize article link.",
+    tags: ["React", "Redux-Toolkit", "Tailwind-css", "RapidApi"],
+    imageUrl: summarizer,
   },
 ] as const;
 
