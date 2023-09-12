@@ -148,7 +148,7 @@ export const projectsData = [
     demo: "https://bookbuddy-seven.vercel.app/",
     github: "https://github.com/nyeinminhtet/bookbuddy",
     description:
-      "AI support chat box, can ask for book what you want. But only can ask for book. ",
+      "AI support chat box, can ask for book what you want. But only can ask for book. It's the best for testing OpenAI.",
     tags: [
       "React",
       "Next.js",
@@ -164,7 +164,7 @@ export const projectsData = [
     demo: "https://summarizer-article.vercel.app/",
     github: "https://github.com/nyeinminhtet/summarizer",
     description:
-      "For articles to summarize with OpenAI. For only, to  summarize article link.",
+      "For articles to summarize with OpenAI. For only, to  summarize article link. Summarized by OpenAI.",
     tags: ["React", "Redux-Toolkit", "Tailwind-css", "RapidApi"],
     imageUrl: summarizer,
   },
