@@ -6,6 +6,7 @@ import gossipy from "@/public/gossipy.png";
 import bookbuddy from "@/public/bookbuddy.png";
 import phaykyi from "@/public/phaykyi.png";
 import summarizer from "@/public/summarizer.png";
+import carhub from "@/public/carhub.png";
 
 import react from "@/assets/react.svg";
 import nextjs from "@/assets/nextjs-icon-svgrepo-com.svg";
@@ -107,6 +108,7 @@ export const projectsData = [
     ],
     imageUrl: social,
   },
+
   {
     title: "Phay Kyi",
     demo: "https://phay-kyi.vercel.app/dashboard",
@@ -142,6 +144,15 @@ export const projectsData = [
       "Redis",
     ],
     imageUrl: gossipy,
+  },
+  {
+    title: "CarHub",
+    demo: "https://carhub-pink.vercel.app",
+    github: "https://github.com/nyeinminhtet/carhub",
+    description:
+      "A car showroom that user can check the car and choose what he want. Free feel to visit and can check all types of cars.",
+    tags: ["React", "Next.js", "Typescript", "RapidAPI"],
+    imageUrl: carhub,
   },
   {
     title: "BookBuddy",
