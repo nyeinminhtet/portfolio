@@ -81,9 +81,9 @@ const Intro = () => {
           <BsArrowRight className=" opacity-70 group-hover:translate-x-2  transition" />
         </Link>
         <a
-          className="flex items-center cursor-pointer group bg-white text-gray-900 px-7 py-3 gap-2 rounded-full 
+          className="flex items-center font-bold cursor-pointer group bg-white text-gray-900 px-7 py-3 gap-2 rounded-full 
           Borderblack outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-gray-200"
-          href="/Nyein_Min_Htet_Resume.pdf"
+          href="/Nyein_Min Htet_Resume.pdf"
         >
           CV{" "}
         </a>
