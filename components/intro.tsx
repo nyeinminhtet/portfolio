@@ -83,9 +83,9 @@ const Intro = () => {
         <a
           className="flex items-center cursor-pointer group bg-white text-gray-900 px-7 py-3 gap-2 rounded-full 
           Borderblack outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-gray-200"
-          href="/Resume.pdf"
+          href="/Nyein_Min_Htet_Resume.pdf"
         >
-          Resume{" "}
+          CV{" "}
         </a>
 
         <div className="flex gap-2">

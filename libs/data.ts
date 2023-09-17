@@ -140,7 +140,6 @@ export const projectsData = [
       "Shadcn/ui",
       "Typescript",
       "NextAuth",
-      "Redux-Toolkit",
       "Redis",
     ],
     imageUrl: gossipy,
