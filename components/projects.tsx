@@ -26,7 +26,7 @@ const Projects = () => {
         </p>
       </div>
 
-      <div>
+      <div className="flex flex-col gap-3 md:gap-0">
         {projectsData.slice(0, 4).map((project, index) => (
           <Project key={index} {...project} />
         ))}

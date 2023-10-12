@@ -17,7 +17,7 @@ const Page = () => {
       <div className="mb-5 w-40">
         <button
           onClick={() => router.back()}
-          className=" flex gap-1 hover:opacity-75 px-5 py-1 rounded-lg text-xl"
+          className=" flex gap-1 hover:opacity-75 md:px-5 py-1 rounded-lg text-xl"
         >
           <ChevronLeftCircle size={30} />
           back
