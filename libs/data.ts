@@ -84,7 +84,7 @@ export const projectsData = [
     imageUrl: breadit,
   },
   {
-    title: "Short-Video-Platform",
+    title: "Short-Video",
     demo: "https://short-video-platform.vercel.app/",
     github: "https://github.com/nyeinminhtet/short-video-platform",
     description:
@@ -93,7 +93,7 @@ export const projectsData = [
     imageUrl: shortvideo,
   },
   {
-    title: "Social-Platform",
+    title: "SocialMedia",
     demo: "https://socialplatform.vercel.app/",
     github: "https://github.com/nyeinminhtet/Mern-social",
     description:

@@ -25,17 +25,17 @@ const Page = () => {
       </div>
 
       {/* all projects */}
-      <section className=" scroll-mt-28 mb-28 flex flex-wrap justify-center gap-3">
+      <section className=" scroll-mt-28 mb-28 flex flex-wrap justify-center gap-5 md:gap-3">
         {projectsData.map((project, index) => {
           const { title, demo, description, tags, github, imageUrl } = project;
           return (
             <div key={index} className="mb-3 sm:mb-6">
               <section
-                className=" bg-gray-100 max-w-[45rem] Borderblack overflow-hidden hover:bg-gray-200 transition sm:pr-18
-       relative sm:h-[23rem] dark:bg-gray-800 dark:hover:bg-gray-700"
+                className=" bg-gray-100 flex flex-col md:flex-row gap-x-3 max-w-[40rem] Borderblack overflow-hidden hover:bg-gray-200 transition sm:pr-18
+                            relative sm:h-[23rem] dark:bg-gray-800 dark:hover:bg-gray-700"
               >
-                <div className=" px-5 pt-4 pb-7 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full ">
-                  <div className="flex gap-7 items-center">
+                <div className=" px-5 pt-4 pb-7 sm:pl-5 sm:pr-2 sm:pt-5 sm:max-w-[50%] flex flex-col h-full ">
+                  <div className="flex gap-2 items-center">
                     <h3 className="text-2xl text-indigo-700 ">{title}</h3>
                     <div className="flex gap-4">
                       <Link
@@ -72,9 +72,10 @@ const Page = () => {
                 <Image
                   src={imageUrl}
                   alt="project"
-                  quality={95}
-                  className=" absolute hidden sm:block   
-                top-8 sm:-right-10 md:right-0 w-[20rem] md:w-[20rem]  rounded-t-lg shadow-2xl cursor-pointer "
+                  quality={100}
+                  priority
+                  className="  
+                 object-contain w-full md:w-[20rem]  shadow-2xl "
                 />
               </section>
             </div>
