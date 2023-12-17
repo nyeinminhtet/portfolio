@@ -7,6 +7,7 @@ import bookbuddy from "@/public/bookbuddy.png";
 import phaykyi from "@/public/phaykyi.png";
 import summarizer from "@/public/summarizer.png";
 import carhub from "@/public/carhub.png";
+import spacePortfolio from "@/public/spacePortfolio.png";
 
 import react from "@/assets/react.svg";
 import nextjs from "@/assets/nextjs-icon-svgrepo-com.svg";
@@ -91,6 +92,15 @@ export const projectsData = [
       "Short video platform is similar with TikTok because I like watching TikTok so I did it.There you can post a video,like and comment.",
     tags: ["React", "Next.js", "Typescript", "Tailwind", "Sanity"],
     imageUrl: shortvideo,
+  },
+  {
+    title: "Space Portfolio",
+    demo: "https://spaceportfolio-eight.vercel.app/",
+    github: "https://github.com/nyeinminhtet/spaceportfolio",
+    description:
+      "A portfolio with animation design with Framer Motion  and NextJs 14.",
+    tags: ["React", "NextJs", "Framer Motion"],
+    imageUrl: spacePortfolio,
   },
   {
     title: "SocialMedia",
