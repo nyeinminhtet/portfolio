@@ -8,6 +8,7 @@ import phaykyi from "@/public/phaykyi.png";
 import summarizer from "@/public/summarizer.png";
 import carhub from "@/public/carhub.png";
 import spacePortfolio from "@/public/spacePortfolio.png";
+import mandalayEvents from "@/public/mandalay_events.png";
 
 import react from "@/assets/react.svg";
 import nextjs from "@/assets/nextjs-icon-svgrepo-com.svg";
@@ -94,6 +95,26 @@ export const projectsData = [
     imageUrl: shortvideo,
   },
   {
+    title: "Mandalay Events",
+    demo: "https://mandalay-events.vercel.app/",
+    github: "https://github.com/nyeinminhtet/mandalay-events",
+    description:
+      "Find out festivals and music shows in Mandalay from one place. You can buy a ticket. The event time and place can be arranged together.",
+    tags: [
+      "React",
+      "NextJs",
+      "Tailwind-css",
+      "Shadcn-ui",
+      "Typescript",
+      "Zod",
+      "MongoDB",
+      "Mongoose",
+      "Stripe",
+      "Clerk",
+    ],
+    imageUrl: mandalayEvents,
+  },
+  {
     title: "Space Portfolio",
     demo: "https://spaceportfolio-eight.vercel.app/",
     github: "https://github.com/nyeinminhtet/spaceportfolio",
@@ -118,7 +139,6 @@ export const projectsData = [
     ],
     imageUrl: social,
   },
-
   {
     title: "Phay Kyi",
     demo: "https://phay-kyi.vercel.app/dashboard",

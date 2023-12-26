@@ -16,10 +16,10 @@ const Projects = () => {
     <section ref={ref} id="projects" className=" scroll-mt-28 mb-28">
       <SectionHeader>My Projects</SectionHeader>
 
-      <div className=" flex justify-between mb-4">
+      <div className="flex justify-between mb-4">
         <div />
         <p
-          className=" hover:opacity-75 cursor-pointer flex gap-1 text-gray-700 dark:text-zinc-400"
+          className="hover:opacity-75 cursor-pointer flex gap-1 text-gray-700 dark:text-zinc-400"
           onClick={() => router.push("/projects")}
         >
           All Projects <ArrowRightCircle size={25} />

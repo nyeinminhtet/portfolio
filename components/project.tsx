@@ -57,7 +57,7 @@ export default function Project({
                 target="_blank"
                 className=" bg-zinc-50 rounded-lg hover:bg-zinc-400 "
               >
-                <Github className=" bg-zinc-300 dark:text-black  rounded-md hover:bg-zinc-400 dark:hover:bg-zinc-50" />
+                <Github className=" dark:text-black  rounded-md hover:bg-zinc-400 dark:hover:bg-zinc-50" />
               </Link>
             </div>
           </div>
