@@ -53,7 +53,7 @@ const Intro = () => {
             a
             <span className=" font-bold dark:text-white">
               {" "}
-              junior full-stack developer{" "}
+              junior web developer{" "}
             </span>
             <span>who's passionate about crafting web applications.</span>
             My focus is
