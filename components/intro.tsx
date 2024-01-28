@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import React from "react";
-import profile from "@/public/profile.png";
+import profile from "@/public/profile.jpg";
 import { motion } from "framer-motion";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { useSectionView } from "@/libs/hook";
 import { useActiveSectionContext } from "@/context/activeSectionContext";
 
@@ -20,7 +20,7 @@ const Intro = () => {
       className="mb-28 sm:mb-0 scroll-mt-[100rem] w-[70%]"
       id="home"
     >
-      <div className="flex flex-wrap justify-evenly mb-10">
+      <div className="flex flex-wrap justify-evenly items-center mb-10">
         {/* image section */}
         <div className="relative">
           <motion.div
@@ -44,10 +44,10 @@ const Intro = () => {
           <motion.h1
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            className=" text-md sm:text-2xl dark:text-gray-300 font-medium !leading-[1.5]"
+            className=" text-md sm:text-2xl dark:text-gray-400 font-medium !leading-[1.5]"
           >
             Hello,
-            <span className="font-bold dark:text-white">
+            <span className="font-bold dark:text-white ">
               I'm Nyein Min Htet,
             </span>{" "}
             a
@@ -71,7 +71,7 @@ const Intro = () => {
       >
         <Link
           href="#contact"
-          className="flex group items-center bg-gray-800 text-white px-7 py-3 gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition hover:bg-gray-950"
+          className="flex group items-center bg-gray-800 text-white px-7 py-3 gap-2 rounded-full outline-none focus:scale-110 hover:scale-105 active:scale-105 transition hover:bg-gray-900"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -82,28 +82,28 @@ const Intro = () => {
         </Link>
         <a
           className="flex items-center font-bold cursor-pointer group bg-white text-gray-900 px-7 py-3 gap-2 rounded-full 
-          Borderblack outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-gray-200"
+          Borderblack outline-none focus:scale-110 hover:scale-105 active:scale-105 transition dark:bg-white/10 dark:text-gray-200"
           href="/Nyein_Min Htet_Resume.pdf"
         >
           CV{" "}
         </a>
 
-        <div className="flex gap-2">
+        <div className="flex gap-1">
           <a
             href="https://www.linkedin.com/in/nyeinminhtet/"
             target="_blank"
-            className="flex group items-center cursor-pointer hover:text-gray-950  bg-white text-gray-800 p-4 gap-2 rounded-full Borderblack
-           outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-[1.15] transition dark:bg-white/60"
+            className="flex group items-center cursor-pointer  hover:bg-gradient-to-r from-slate-50 to-zinc-500 border border-black/20 hover:border-none dark:border-black/40  p-3 gap-2 rounded-full
+           outline-none focus:scale-[1.15]  active:scale-[1.15] transition dark:hover:bg-gradient-to-r dark:from-white/90 dark:to-slate-200"
           >
-            <BsLinkedin size={25} />
+            <FaLinkedin className="text-blue-500  w-10 h-10" />
           </a>
           <a
             href="https://github.com/nyeinminhtet"
             target="_blank"
-            className="flex group items-center cursor-pointer hover:text-gray-950  bg-white text-gray-800 p-4 gap-2 rounded-full Borderblack
-           outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-[1.5] transition dark:bg-white/60"
+            className="flex group items-center cursor-pointer   hover:bg-gradient-to-r from-slate-50 to-zinc-500 border border-black/20 hover:border-none dark:border-black/40  p-3 gap-2 rounded-full 
+            outline-none focus:scale-[1.15]  active:scale-[1.15] transition dark:hover:bg-gradient-to-r dark:from-white/90 dark:to-slate-200"
           >
-            <FaGithubSquare size={27} />
+            <FaGithub className="w-10 h-10 text-black dark:text-white group-hover:dark:text-black" />
           </a>
         </div>
       </motion.div>

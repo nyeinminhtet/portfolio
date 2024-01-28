@@ -1,13 +1,7 @@
 import sarrmal from "@/public/sarrmal.png";
 import breadit from "@/public/breadid.png";
 import shortvideo from "@/public/tiktok.png";
-import social from "@/public/social.png";
-import gossipy from "@/public/gossipy.png";
-import bookbuddy from "@/public/bookbuddy.png";
 import phaykyi from "@/public/phaykyi.png";
-import summarizer from "@/public/summarizer.png";
-import carhub from "@/public/carhub.png";
-import spacePortfolio from "@/public/spacePortfolio.png";
 import mandalayEvents from "@/public/mandalay_events.png";
 
 import react from "@/assets/react.svg";
@@ -114,31 +108,7 @@ export const projectsData = [
     ],
     imageUrl: mandalayEvents,
   },
-  {
-    title: "Space Portfolio",
-    demo: "https://spaceportfolio-eight.vercel.app/",
-    github: "https://github.com/nyeinminhtet/spaceportfolio",
-    description:
-      "A portfolio with animation design with Framer Motion  and NextJs 14.",
-    tags: ["React", "NextJs", "Framer Motion"],
-    imageUrl: spacePortfolio,
-  },
-  {
-    title: "SocialMedia",
-    demo: "https://socialplatform.vercel.app/",
-    github: "https://github.com/nyeinminhtet/Mern-social",
-    description:
-      "A SocialMedia Platform, can create post, like and follow function. Light & Dark mods are include as LightTheme.",
-    tags: [
-      "React",
-      "Redux-Toolkit",
-      "Material-UI",
-      "express",
-      "mongoose",
-      "MongoDB",
-    ],
-    imageUrl: social,
-  },
+
   {
     title: "Phay Kyi",
     demo: "https://phay-kyi.vercel.app/dashboard",
@@ -156,57 +126,6 @@ export const projectsData = [
       "PostgreSQL",
     ],
     imageUrl: phaykyi,
-  },
-  {
-    title: "Gossipy",
-    demo: "https://gossipy-talk.vercel.app/",
-    github: "https://github.com/nyeinminhtet/gossipy",
-    description:
-      "A realtime chat message, user can add friend, accept and send message.",
-    tags: [
-      "React",
-      "Next.js",
-      "Tailwind-css",
-      "Shadcn/ui",
-      "Typescript",
-      "NextAuth",
-      "Redis",
-    ],
-    imageUrl: gossipy,
-  },
-  {
-    title: "CarHub",
-    demo: "https://carhub-pink.vercel.app",
-    github: "https://github.com/nyeinminhtet/carhub",
-    description:
-      "A car showroom that user can check the car and choose what he want. Free feel to visit and can check all types of cars.",
-    tags: ["React", "Next.js", "Typescript", "RapidAPI"],
-    imageUrl: carhub,
-  },
-  {
-    title: "BookBuddy",
-    demo: "https://bookbuddy-seven.vercel.app/",
-    github: "https://github.com/nyeinminhtet/bookbuddy",
-    description:
-      "AI support chat box, can ask for book what you want. But only can ask for book. It's the best for testing OpenAI.",
-    tags: [
-      "React",
-      "Next.js",
-      "Typescript",
-      "Tailwind-css",
-      "Shadcd/ui",
-      "Redis",
-    ],
-    imageUrl: bookbuddy,
-  },
-  {
-    title: "Summarizer",
-    demo: "https://summarizer-article.vercel.app/",
-    github: "https://github.com/nyeinminhtet/summarizer",
-    description:
-      "For articles to summarize with OpenAI. For only, to  summarize article link. Summarized by OpenAI.",
-    tags: ["React", "Redux-Toolkit", "Tailwind-css", "RapidApi"],
-    imageUrl: summarizer,
   },
 ] as const;
 

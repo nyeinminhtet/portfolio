@@ -7,8 +7,9 @@ import Providers from "@/components/providers";
 const popin = Poppins({ weight: "500", subsets: ["latin"] });
 
 export const metadata = {
-  title: " Personal Portfolio",
-  description: "full-stack developer",
+  title: "Personal Portfolio",
+  description:
+    "A Junior Web Developer who's passionate about crafting web applications.",
 };
 
 export default function RootLayout({
@@ -17,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className=" !scroll-smooth">
+    <html lang="en" className="!scroll-smooth">
       <body
         className={`${popin.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
