@@ -1,8 +1,14 @@
+import { MdWorkOutline, MdEmail } from "react-icons/md";
+import { SiAboutdotme } from "react-icons/si";
+import { BsRocketTakeoff } from "react-icons/bs";
+import { IoLogoReact } from "react-icons/io5";
+
 import sarrmal from "@/public/sarrmal.png";
 import breadit from "@/public/breadid.png";
 import shortvideo from "@/public/tiktok.png";
 import phaykyi from "@/public/phaykyi.png";
 import mandalayEvents from "@/public/mandalay_events.png";
+import jobBoard from "@/public/job-board.png";
 
 import react from "@/assets/react.svg";
 import nextjs from "@/assets/nextjs-icon-svgrepo-com.svg";
@@ -24,22 +30,27 @@ export const links = [
   {
     name: "Home",
     hash: "#home",
+    Icon: BsRocketTakeoff,
   },
   {
     name: "About",
     hash: "#about",
+    Icon: SiAboutdotme,
   },
   {
     name: "Projects",
     hash: "#projects",
+    Icon: MdWorkOutline,
   },
   {
     name: "Skills",
     hash: "#skills",
+    Icon: IoLogoReact,
   },
   {
     name: "Contact",
     hash: "#contact",
+    Icon: MdEmail,
   },
 ] as const;
 
@@ -107,6 +118,24 @@ export const projectsData = [
       "Clerk",
     ],
     imageUrl: mandalayEvents,
+  },
+  {
+    title: "Job Hub",
+    demo: "https://job-board-jeydev.vercel.app/",
+    github: "https://github.com/nyeinminhtet/job-board",
+    description:
+      "Find out the best suitable job and emplyoee all over the world.",
+    tags: [
+      "NextJs",
+      "Tailwind-css",
+      "Shadcn-ui",
+      "Typescript",
+      "Zod",
+      "Prisma",
+      "PostgreSQL",
+      "Clerk",
+    ],
+    imageUrl: jobBoard,
   },
 
   {

@@ -67,32 +67,21 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
-        className="flex flex-col sm:flex-row justify-center items-center text-md gap-2"
+        className="flex flex-row justify-center items-center text-base gap-2"
       >
-        <Link
-          href="#contact"
-          className="flex group items-center bg-gray-800 text-white px-7 py-3 gap-2 rounded-full outline-none focus:scale-110 hover:scale-105 active:scale-105 transition hover:bg-gray-900"
-          onClick={() => {
-            setActiveSection("Contact");
-            setTimeOfLastClick(Date.now());
-          }}
-        >
-          Contact me here{" "}
-          <BsArrowRight className=" opacity-70 group-hover:translate-x-2  transition" />
-        </Link>
         <a
-          className="flex items-center font-bold cursor-pointer group bg-white text-gray-900 px-7 py-3 gap-2 rounded-full 
+          className="flex items-center font-bold cursor-pointer group bg-white text-gray-900 px-5  md:px-7 py-3 gap-2 rounded-full 
           Borderblack outline-none focus:scale-110 hover:scale-105 active:scale-105 transition dark:bg-white/10 dark:text-gray-200"
           href="/Nyein_Min Htet_Resume.pdf"
         >
-          CV{" "}
+          CV
         </a>
 
         <div className="flex gap-1">
           <a
             href="https://www.linkedin.com/in/nyeinminhtet/"
             target="_blank"
-            className="flex group items-center cursor-pointer  hover:bg-gradient-to-r from-slate-50 to-zinc-500 border border-black/20 hover:border-none dark:border-black/40  p-3 gap-2 rounded-full
+            className="flex group items-center cursor-pointer  hover:bg-white   p-3 gap-2 rounded-full
            outline-none focus:scale-[1.15]  active:scale-[1.15] transition dark:hover:bg-gradient-to-r dark:from-white/90 dark:to-slate-200"
           >
             <FaLinkedin className="text-blue-500  w-10 h-10" />
@@ -100,7 +89,7 @@ const Intro = () => {
           <a
             href="https://github.com/nyeinminhtet"
             target="_blank"
-            className="flex group items-center cursor-pointer   hover:bg-gradient-to-r from-slate-50 to-zinc-500 border border-black/20 hover:border-none dark:border-black/40  p-3 gap-2 rounded-full 
+            className="flex group items-center cursor-pointer   hover:bg-white p-3 gap-2 rounded-full 
             outline-none focus:scale-[1.15]  active:scale-[1.15] transition dark:hover:bg-gradient-to-r dark:from-white/90 dark:to-slate-200"
           >
             <FaGithub className="w-10 h-10 text-black dark:text-white group-hover:dark:text-black" />

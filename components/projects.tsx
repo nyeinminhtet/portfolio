@@ -9,11 +9,11 @@ import { ArrowRightCircle, ChevronRightCircle } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 const Projects = () => {
-  const { ref } = useSectionView("Projects", 0.3);
+  const { ref } = useSectionView("Projects", 0.2);
   const router = useRouter();
 
   return (
-    <section ref={ref} id="projects" className=" scroll-mt-28 mb-28">
+    <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
       <SectionHeader>My Projects</SectionHeader>
 
       <div className="flex justify-between mb-4">

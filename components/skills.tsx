@@ -41,14 +41,14 @@ const Skills = () => {
             custom={i}
             whileInView="animate"
             viewport={{ once: true }}
+            className="relative w-[2.5rem] h-[2.5rem] sm:w-[3rem] sm:h-[3rem] md:w-[4rem] md:h-[4rem]"
           >
             <Image
               alt="skills"
               src={skill}
-              width={65}
-              height={65}
+              fill
               quality={95}
-              className="  rounded-xl dark:bg-white/80"
+              className=" object-contain rounded-xl dark:bg-white"
             />
           </motion.li>
         ))}
