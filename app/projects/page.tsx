@@ -8,6 +8,7 @@ import Image from "next/image";
 import { ChevronLeftCircle } from "lucide-react";
 import { useRouter } from "next/navigation";
 import SectionHeader from "@/components/sectionHeader";
+import { motion } from "framer-motion";
 
 const Page = () => {
   const router = useRouter();
@@ -31,12 +32,16 @@ const Page = () => {
           return (
             <div key={index} className="mb-3 sm:mb-6">
               <section
-                className=" bg-gray-100 relative flex flex-col md:flex-row gap-x-3 max-w-[40rem] Borderblack overflow-hidden hover:bg-gray-200 transition sm:pr-18
-                            relative sm:h-[28rem] dark:bg-gray-800 dark:hover:bg-gray-700 rounded-xl"
+                className=" bg-gray-100 group relative flex flex-col md:flex-row gap-x-3 max-w-[40rem] Borderblack overflow-hidden hover:bg-gray-200 transition sm:pr-18
+                             sm:h-[28rem] dark:bg-gray-800 dark:hover:bg-gray-700 rounded-xl"
               >
                 <div className="px-5 pt-4 pb-7 sm:pl-5 sm:pr-2 sm:pt-5 sm:max-w-[50%] flex flex-col h-full">
                   <div className="flex gap-2 items-center">
-                    <h3 className="text-2xl text-indigo-700">{title}</h3>
+                    <h3 className="relative text-2xl font-semibold dark:text-gray-200">
+                      {title}
+                      <motion.hr className="underline-animation group-hover:w-full" />
+                    </h3>
+
                     <div className="flex gap-4 absolute right-5 top-5">
                       <Link
                         href={demo}
@@ -45,12 +50,8 @@ const Page = () => {
                       >
                         demo
                       </Link>
-                      <Link
-                        href={github}
-                        target="_blank"
-                        className=" bg-zinc-50 rounded-lg hover:bg-zinc-400 "
-                      >
-                        <Github className="dark:text-black rounded-md hover:bg-zinc-400 dark:hover:bg-zinc-50" />
+                      <Link href={github} target="_blank">
+                        <Github className=" dark:text-white  rounded-md  hover:text-indigo-800 dark:hover:text-indigo-600" />
                       </Link>
                     </div>
                   </div>
@@ -61,7 +62,7 @@ const Page = () => {
                     {tags.map((tag, i) => (
                       <li
                         key={i}
-                        className=" bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
+                        className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
                       >
                         {tag}
                       </li>

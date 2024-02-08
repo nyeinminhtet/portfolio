@@ -9,6 +9,7 @@ import shortvideo from "@/public/tiktok.png";
 import phaykyi from "@/public/phaykyi.png";
 import mandalayEvents from "@/public/mandalay_events.png";
 import jobBoard from "@/public/job-board.png";
+import ultimate1 from "@/public/ultimate1.png";
 
 import react from "@/assets/react.svg";
 import nextjs from "@/assets/nextjs-icon-svgrepo-com.svg";
@@ -55,6 +56,26 @@ export const links = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Ultimate LifeStyle",
+    demo: "https://www.ultimatelifestyle.app/",
+    github: "https://www.ultimatelifestyle.app/",
+    description:
+      "You can take care of your health  with a doctor on online and attend  health courses. You can also access and read articles on health.",
+    tags: [
+      "React",
+      "Next.js",
+      "Zustand",
+      "Tailwind-Css",
+      "Typescript",
+      "Axios",
+      "Express",
+      "MongoDb",
+      "Socket",
+      "JWT",
+    ],
+    imageUrl: ultimate1,
+  },
   {
     title: "SarrMal(POS)",
     demo: "https://sarrmal.vercel.app/",

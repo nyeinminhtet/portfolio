@@ -36,13 +36,14 @@ export default function Project({
       className="mb-3 sm:mb-6 last:mb-0 group"
     >
       <section
-        className=" bg-gray-100 flex flex-col md:flex-row max-w-[52rem] Borderblack overflow-hidden hover:bg-gray-200 transition md:pr-18
-       relative md:h-[23rem] dark:bg-gray-800 dark:hover:bg-gray-700"
+        className=" bg-gray-100 group flex flex-col md:flex-row max-w-[52rem] Borderblack overflow-hidden hover:bg-gray-200 transition md:pr-18
+      relative  md:h-[23rem] dark:bg-gray-800 "
       >
-        <div className=" px-5 pt-4 pb-7 md:pl-10 md:pr-2 md:pt-10 md:max-w-[50%] flex flex-col h-full md:group-even:ml-[26rem]">
-          <div className="flex gap-5 items-center">
-            <h3 className=" text-2xl font-semibold dark:text-gray-200">
+        <div className="px-5 pt-4 pb-7 md:pl-10 md:pr-2 md:pt-10 md:max-w-[50%] flex flex-col h-full md:group-even:ml-[50%]">
+          <div className=" flex gap-5 items-center">
+            <h3 className="relative text-2xl font-semibold dark:text-gray-200">
               {title}
+              <motion.hr className="underline-animation group-hover:w-full" />
             </h3>
             <div className="flex gap-4">
               <Link
@@ -52,12 +53,8 @@ export default function Project({
               >
                 demo
               </Link>
-              <Link
-                href={github}
-                target="_blank"
-                className=" bg-zinc-50 rounded-lg hover:bg-zinc-400 "
-              >
-                <Github className=" dark:text-black  rounded-md hover:bg-zinc-400 dark:hover:bg-zinc-50" />
+              <Link href={github} target="_blank">
+                <Github className=" dark:text-white  rounded-md  hover:text-indigo-800 dark:hover:text-indigo-600" />
               </Link>
             </div>
           </div>
@@ -68,7 +65,8 @@ export default function Project({
             {tags.map((tag, i) => (
               <li
                 key={i}
-                className=" bg-black/70 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
+                className="bg-black/70 px-3 py-1 text-[0.7rem] 
+                uppercase tracking-wider text-white rounded-full"
               >
                 {tag}
               </li>
@@ -76,14 +74,16 @@ export default function Project({
           </ul>
         </div>
 
-        <Image
-          src={imageUrl}
-          alt="project"
-          quality={100}
-          priority
-          className="md:absolute lg:group-hover:-translate-x-3 lg:group-hover:translate-y-3 lg:group-last:mt-10 lg:group-hover:scale-110 transition
-              md:right-0 w-full object-contain md:w-[25.25rem] md:group-last:w-[27rem] rounded-t-lg shadow-2xl cursor-pointer group-odd:top-20 group-even:left-0"
-        />
+        <div className="absolute w-1/2 group-even:left-0 group-odd:right-0">
+          <Image
+            src={imageUrl}
+            alt="project"
+            quality={100}
+            priority
+            className="md:absolute lg:group-last:mt-10 transition
+              md:right-0 w-full object-cover md:w-[25.25rem] md:group-last:w-[27rem] rounded-t-lg shadow-2xl"
+          />
+        </div>
       </section>
     </motion.div>
   );
