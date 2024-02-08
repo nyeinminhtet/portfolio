@@ -26,7 +26,7 @@ const Page = () => {
       </div>
 
       {/* all projects */}
-      <section className="scroll-mt-28 mb-28 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-3">
+      <section className="scroll-mt-28 mb-28 grid grid-cols-1 mx-auto lg:grid-cols-2 gap-5 md:gap-3">
         {projectsData.map((project, index) => {
           const { title, demo, description, tags, github, imageUrl } = project;
           return (
@@ -35,14 +35,14 @@ const Page = () => {
                 className=" bg-gray-100 group relative flex flex-col md:flex-row gap-x-3 max-w-[40rem] Borderblack overflow-hidden hover:bg-gray-200 transition sm:pr-18
                              sm:h-[28rem] dark:bg-gray-800 dark:hover:bg-gray-700 rounded-xl"
               >
-                <div className="px-5 pt-4 pb-7 sm:pl-5 sm:pr-2 sm:pt-5 sm:max-w-[50%] flex flex-col h-full">
+                <div className="px-5 pt-4 pb-7 sm:pl-5 sm:pr-2 sm:pt-5 md:max-w-[50%] flex flex-col h-full">
                   <div className="flex gap-2 items-center">
-                    <h3 className="relative text-2xl font-semibold dark:text-gray-200">
+                    <h3 className="relative text-xl lg:text-2xl font-semibold dark:text-gray-200">
                       {title}
                       <motion.hr className="underline-animation group-hover:w-full" />
                     </h3>
 
-                    <div className="flex gap-4 absolute right-5 top-5">
+                    <div className="hidden md:flex gap-4 absolute right-5 top-5">
                       <Link
                         href={demo}
                         target="_blank"

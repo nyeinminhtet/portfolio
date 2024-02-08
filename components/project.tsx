@@ -36,7 +36,7 @@ export default function Project({
       className="mb-3 sm:mb-6 last:mb-0 group"
     >
       <section
-        className=" bg-gray-100 group flex flex-col md:flex-row max-w-[52rem] Borderblack overflow-hidden hover:bg-gray-200 transition md:pr-18
+        className=" bg-gray-100 group flex flex-col lg:flex-row max-w-[52rem] Borderblack overflow-hidden hover:bg-gray-200 transition md:pr-18
       relative  md:h-[23rem] dark:bg-gray-800 "
       >
         <div className="px-5 pt-4 pb-7 md:pl-10 md:pr-2 md:pt-10 md:max-w-[50%] flex flex-col h-full md:group-even:ml-[50%]">
@@ -74,14 +74,14 @@ export default function Project({
           </ul>
         </div>
 
-        <div className="absolute w-1/2 group-even:left-0 group-odd:right-0">
+        <div className="md:absolute w-full md:w-1/2 group-even:left-0 group-odd:right-0">
           <Image
             src={imageUrl}
             alt="project"
             quality={100}
             priority
             className="md:absolute lg:group-last:mt-10 transition
-              md:right-0 w-full object-cover md:w-[25.25rem] md:group-last:w-[27rem] rounded-t-lg shadow-2xl"
+              md:right-0 w-full object-contain md:w-[25.25rem] md:group-last:w-[27rem] rounded-t-lg shadow-2xl"
           />
         </div>
       </section>

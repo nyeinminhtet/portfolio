@@ -19,7 +19,7 @@ const Projects = () => {
       <div className="flex justify-between mb-4">
         <div />
         <p
-          className="hover:opacity-75 cursor-pointer flex gap-1 text-gray-700 dark:text-zinc-400"
+          className="flex hover:opacity-75 cursor-pointer  gap-1 text-gray-700 dark:text-zinc-400"
           onClick={() => router.push("/projects")}
         >
           All Projects <ArrowRightCircle size={25} />
